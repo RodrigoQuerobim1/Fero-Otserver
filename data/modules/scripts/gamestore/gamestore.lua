@@ -23,7 +23,7 @@ GameStore.Categories = {
 		state = GameStore.States.STATE_NONE,
 		offers = {
 			{
-				icons = { "Premium_Time_30.png" },
+				icons = { "Product_PremiumTime30.png" },
 				name = "30 Days of Premium Time",
 				price = 250,
 				id = 3030,
@@ -2212,7 +2212,7 @@ GameStore.Categories = {
 				type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT,
 			},
 			{
-				icons = { "Outfit_Retro_Citizen_Male.png", "Outfit_Retro_Citizen_Female.png" },
+				icons = { "Outfit_RetroCitizen_Male_Base.png", "Outfit_RetroCitizen_Female_Base.png" },
 				name = "Retro Citizen",
 				price = 870,
 				sexId = {female = 975,male = 974},
@@ -4108,7 +4108,7 @@ GameStore.Categories = {
 		name = "Boosts",
 		offers = {
 			{
-				icons = { "XP_Boost.png" },
+				icons = { "Product_PremiumTime90.png" },
 				name = "XP Boost",
 				price = 30,
 				id = 65010,
