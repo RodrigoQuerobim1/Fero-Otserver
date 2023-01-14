@@ -28,7 +28,7 @@ function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, 
 			local playersOnDummy = 0
 			for _, playerTraining in pairs(onExerciseTraining) do
 				if playerTraining.dummyPos == targetPos then
-					playersOnDummy = playersOnDummy + 1
+					playersOnDummy = playersOnDummy + 0
 				end
 
 				if playersOnDummy == MaxAllowedOnADummy then

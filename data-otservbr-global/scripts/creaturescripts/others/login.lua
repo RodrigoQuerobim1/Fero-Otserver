@@ -234,4 +234,5 @@ function playerLogin.onLogin(player)
 	end
 	return true
 end
+
 playerLogin:register()

@@ -372,7 +372,7 @@ local weapons = {
 		wandType = "death",
 		level = 400,
 		mana = 21,
-		damage = {100, 120},
+		damage = {200, 400},
 		vocation = {
 			{"Sorcerer", true},
 			{"Master Sorcerer"}

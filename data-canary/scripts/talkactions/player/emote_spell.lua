@@ -1,5 +1,5 @@
 -- Usage talkaction: "!emote on" or "!emote off"
-local emoteSpell = TalkAction("!emote")
+local emoteSpell = TalkAction("!emotespells")
 
 function emoteSpell.onSay(player, words, param)
 	if param == "" then

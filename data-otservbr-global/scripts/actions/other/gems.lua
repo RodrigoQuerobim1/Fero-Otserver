@@ -24,6 +24,7 @@ local shrine = {
 		destination = {x = 33539, y = 32209, z = 7},
 		effect = CONST_ME_SMALLPLANTS
 	},
+	-- vis shrine
 	[3033] = {
 		targetAction = 15004,
 		-- shrinePosition = {x = 33060, y = 32713, z = 5}, -- read-only
@@ -102,7 +103,7 @@ function gems.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local ThreatenedDreams = Storage.Quest.U11_40.ThreatenedDreams
 	for index, value in pairs(shrine) do
 		if target.actionid == value.targetAction then
-			if player:getStorageValue(ThreatenedDreams.Mission01[1]) == 16 then
+			if player:getStorageValue(ThreatenedDreams.Mission01[1]) == -1 then
 				if item.itemid == index then
 					player:teleportTo(value.destination)
 					player:getPosition():sendMagicEffect(value.effect)

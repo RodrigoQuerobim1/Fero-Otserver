@@ -6,8 +6,8 @@ combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_ICEDAMAGE)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_ICE)
 
 function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 0.4) + 3
-	local max = (level / 5) + (maglevel * 0.7) + 7
+	local min = (level / 5) + (maglevel * 3.0) + 100
+	local max = (level / 5) + (maglevel * 5.0) + 200
 	return -min, -max
 end
 
@@ -30,8 +30,8 @@ combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_FIREDAMAGE)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_FIRE)
 
 function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 0.4) + 3
-	local max = (level / 5) + (maglevel * 0.7) + 7
+	local min = (level / 5) + (maglevel * 3.0) + 100
+	local max = (level / 5) + (maglevel * 5.0) + 200
 	return -min, -max
 end
 
