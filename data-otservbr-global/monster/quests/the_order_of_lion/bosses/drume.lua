@@ -101,16 +101,16 @@ monster.loot = {
 	{name = "giant ruby", chance = 3012},
 	{name = "underworld rod", chance = 2410},
 	{name = "lion spangenhelm", chance = 90},
-	{name = "lion plate", chance = 90},
-	{name = "lion shield", chance = 90},
-	{name = "lion longsword", chance = 90},
-	{name = "lion hammer", chance = 90},
-	{name = "lion axe", chance = 90},
-	{name = "lion longbow", chance = 90},
-	{name = "lion spellbook", chance = 90},
-	{name = "lion wand", chance = 90},
-	{name = "lion amulet", chance = 90},
-	{name = "lion rod", chance = 90}
+	{name = "lion plate", chance = 350},
+	{name = "lion shield", chance = 350},
+	{name = "lion longsword", chance = 350},
+	{name = "lion hammer", chance = 350},
+	{name = "lion axe", chance = 350},
+	{name = "lion longbow", chance = 350},
+	{name = "lion spellbook", chance = 350},
+	{name = "lion wand", chance = 350},
+	{name = "lion amulet", chance = 350},
+	{name = "lion rod", chance = 350}
 }
 
 monster.attacks = {

@@ -10,7 +10,7 @@ dofile(CORE_DIRECTORY.. '/modules/scripts/gamestore/init.lua')
 -- Config
 
 HomeBanners = {
-	images = { "home/banner_riftwatcher.png" , "home/banner_runemaster.png" , "home/banner_podiumofrenown.png" },
+	images = { "home/banner_trailblazer.png" },
 	delay = 10
 }
 
@@ -18,48 +18,29 @@ GameStore.Categories = {
 	{
 		--Premium Time
 		icons = { "Category_PremiumTime.png" },
-		name = "Premium Time",
+		name = "VIP",
 		rookgaard = true,
 		state = GameStore.States.STATE_NONE,
 		offers = {
 			{
-				icons = { "Product_PremiumTime30.png" },
-				name = "30 Days of Premium Time",
+				icons = { "Premium_Time_30.png" }, 
+				name = "7 Days of Vip",
 				price = 250,
 				id = 3030,
-				validUntil = 30,
-				description = "<i>Enhance your gaming experience by gaining additional abilities and advantages:</i>\n\n&#8226; access to Premium areas\n&#8226; use Tibia's transport system (ships, carpet)\n&#8226; more spells\n&#8226; rent houses\n&#8226; found guilds\n&#8226; offline training\n&#8226; larger depots\n&#8226; and many more\n\n{usablebyallicon} valid for all characters on this account\n{activated}",
-				type = GameStore.OfferTypes.OFFER_TYPE_PREMIUM,
+				validUntil = 7,
+				description = "<i>VANTAGENS VIP:</i>\n\n&#8226; 10% + EXP\n&#8226; 10% + LOOT\n&#8226; Fast Regen (Health Points / Mana Points)\n&#8226; Montarias Exclusivas\n&#8226; Outfit Exclusivo\n&#8226; 2x Tournament Coins\n\n{usablebyallicon} valid for all characters on this account\n{activated}",				type = GameStore.OfferTypes.OFFER_TYPE_VIP,
 			},
 			{
 				icons = { "Premium_Time_90.png" },
-				name = "90 Days of Premium Time",
-				price = 750,
+				name = "30 Days of Vip",
+				price = 1000,
 				id = 3090,
-				validUntil = 90,
-				description = "<i>Enhance your gaming experience by gaining additional abilities and advantages:</i>\n\n&#8226; access to Premium areas\n&#8226; use Tibia's transport system (ships, carpet)\n&#8226; more spells\n&#8226; rent houses\n&#8226; found guilds\n&#8226; offline training\n&#8226; larger depots\n&#8226; and many more\n\n{usablebyallicon} valid for all characters on this account\n{activated}",
-				type = GameStore.OfferTypes.OFFER_TYPE_PREMIUM,
+				validUntil = 30,
+				description = "<i>VANTAGENS VIP:</i>\n\n&#8226; 10% + EXP\n&#8226; 10% + LOOT\n&#8226; Fast Regen (Health Points / Mana Points)\n&#8226; Montarias Exclusivas\n&#8226; Outfit Exclusivo\n&#8226; 2x Tournament Coins\n\n{usablebyallicon} valid for all characters on this account\n{activated}",
+				type = GameStore.OfferTypes.OFFER_TYPE_VIP,
 			},
-			{
-				icons = { "Premium_Time_180.png" },
-				name = "180 Days of Premium Time",
-				price = 1500,
-				id = 3180,
-				validUntil = 180,
-				description = "<i>Enhance your gaming experience by gaining additional abilities and advantages:</i>\n\n&#8226; access to Premium areas\n&#8226; use Tibia's transport system (ships, carpet)\n&#8226; more spells\n&#8226; rent houses\n&#8226; found guilds\n&#8226; offline training\n&#8226; larger depots\n&#8226; and many more\n\n{usablebyallicon} valid for all characters on this account\n{activated}",
-				type = GameStore.OfferTypes.OFFER_TYPE_PREMIUM,
-			},
-			{
-				icons = { "Premium_Time_360.png" },
-				name = "360 Days of Premium Time",
-				price = 3000,
-				id = 3360,
-				validUntil = 360,
-				description = "<i>Enhance your gaming experience by gaining additional abilities and advantages:</i>\n\n&#8226; access to Premium areas\n&#8226; use Tibia's transport system (ships, carpet)\n&#8226; more spells\n&#8226; rent houses\n&#8226; found guilds\n&#8226; offline training\n&#8226; larger depots\n&#8226; and many more\n\n{usablebyallicon} valid for all characters on this account\n{activated}",
-				type = GameStore.OfferTypes.OFFER_TYPE_PREMIUM,
-			},
-		},
 	},
+},
 	{
 		icons = { "Category_Consumables.png" },
 		name = "Consumables",
@@ -4108,7 +4089,7 @@ GameStore.Categories = {
 		name = "Boosts",
 		offers = {
 			{
-				icons = { "Product_PremiumTime90.png" },
+				icons = { "xp_boost.png" },
 				name = "XP Boost",
 				price = 30,
 				id = 65010,

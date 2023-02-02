@@ -22,7 +22,7 @@ local questTable = {
 	{storage = Storage.DangerousDepths.Dwarves.Status, storageValue = 10},
 	{storage = Storage.DangerousDepths.Scouts.Status, storageValue = 10},
 	{storage = Storage.DangerousDepths.Gnomes.Status, storageValue = 10},
-	{storage = Storage.InServiceofYalahar.Questline, storageValue = 51},
+	{storage = Storage.InServiceofYalahar.Questline, storageValue = 5},
 	{storage = Storage.InServiceofYalahar.Mission01, storageValue = 6},
 	{storage = Storage.InServiceofYalahar.Mission02, storageValue = 8},
 	{storage = Storage.InServiceofYalahar.Mission03, storageValue = 6},
@@ -299,7 +299,18 @@ local questTable = {
 	{storage = Storage.ForgottenKnowledge.AccessEarth, storageValue = 1},
 	{storage = Storage.ForgottenKnowledge.AccessFire, storageValue = 1},
 	{storage = Storage.ForgottenKnowledge.AccessIce, storageValue = 1},
-	{storage = Storage.ForgottenKnowledge.AccessGolden, storageValue = 1}
+	{storage = Storage.ForgottenKnowledge.AccessGolden, storageValue = 1},
+	{storage = Storage.Quest.U12_00.TheDreamCourts.AccessDoors, storageValue = 1},
+	{storage = Storage.Quest.U12_60.APiratesTail.TentuglyDoor, storageValue = 1},
+	{storage = Storage.Quest.U12_70.AdventuresOfGalthen.AccessDoor, storageValue = 1},
+	{storage = Storage.Quest.U10_80.Grimvale.AncientFeudDoors, storageValue = 1},
+	{storage = Storage.Quest.U10_80.Grimvale.AncientFeudShortcut, storageValue = 1},
+	{storage = Storage.Kilmaresh.AccessDoor, storageValue = 1},
+	{storage = Storage.Quest.U8_4.BloodBrothers.QuestLine, storageValue = 1},
+	{storage = Storage.Quest.U8_4.BloodBrothers.Mission01, storageValue = 4},
+	{storage = Storage.Quest.U8_4.BloodBrothers.Mission02, storageValue = 2},
+	{storage = Storage.Quest.U8_4.BloodBrothers.Mission03, storageValue = 3},
+	{storage = Storage.Quest.U8_4.BloodBrothers.Mission04, storageValue = 1},
 }
 
 local function playerFreeQuestStart(playerId, index)

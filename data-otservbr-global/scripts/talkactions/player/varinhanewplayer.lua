@@ -5,21 +5,23 @@ local config = {
 		{id = 35284, amount = 1, charges = 10000}, -- exercise wand
 		{id = 35283, amount = 1, charges = 10000}, -- exercise rod
         {id = 35282, amount = 1, charges = 10000}, -- exercise distance
+		{id = 35280, amount = 1, charges = 10000}, -- exercise axe
+		{id = 35279, amount = 1, charges = 10000}, -- exercise axe
         {id = 35281, amount = 1, charges = 10000}, -- exercise club
-        {id = 35280, amount = 1, charges = 10000}, -- exercise axe
+        
 	},
 	storage = 33277123,
 }
 
 local function sendRewardModal(player)
 	if player:getStorageValue(config.storage) > 0 then
-		player:sendTextMessage(MESSAGE_INFO_DESCR, "Você já recebeu sua recompensa!")
+		player:sendTextMessage(MESSAGE_INFO_DESCR, "Voce ja recebeu sua recompensa!")
 		return false
 	end
 	
 	local window = ModalWindow {
 		title = "Reward",
-		message = 'Escolha um item'
+		message = 'Escolha uma exercise trainning'
 	}
 	
 	for _, it in pairs(config.items) do
@@ -49,7 +51,7 @@ local function sendRewardModal(player)
 					player:sendTextMessage(MESSAGE_INFO_DESCR, "Verifique se você tem espaços livres na store inbox.")
 					return
 				end
-				player:sendTextMessage(MESSAGE_INFO_DESCR, "Parabéns, você acabou de receber ".. choice.amount .."x ".. iType:getName() .." como recompensa.")
+				player:sendTextMessage(MESSAGE_INFO_DESCR, "Parabens, voce acabou de receber ".. choice.amount .."x ".. iType:getName() .." como recompensa.")
 				player:setStorageValue(config.storage, 1)  -- seta para 1
 			else
 				player:sendTextMessage(MESSAGE_INFO_DESCR, "Verifique se você tem espaços livres na store inbox.")

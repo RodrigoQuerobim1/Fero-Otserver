@@ -21,6 +21,9 @@ end
 local playerLogin = CreatureEvent("PlayerLogin")
 
 function playerLogin.onLogin(player)
+	player:loadVipData()
+	player:updateVipTime()
+	player:addAddonMount()
 	local items = {
 		{3003, 1},
 		{3031, 3}
@@ -219,7 +222,7 @@ function playerLogin.onLogin(player)
 	-- Set Client XP Gain Rate --
 	if Game.getStorageValue(GlobalStorage.XpDisplayMode) > 0 then
 		local baseRate = player:getFinalBaseRateExperience()
-		player:setBaseXpGain(baseRate * 100)
+		player:setBaseXpGain(baseRate * 350)
 	end
 
 	local staminaMinutes = player:getStamina()

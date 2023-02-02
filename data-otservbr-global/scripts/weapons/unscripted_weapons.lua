@@ -4883,7 +4883,7 @@ local weapons = {
 		-- spear
 		itemid = 3277,
 		type = WEAPON_DISTANCE,
-		breakchance = 3
+		breakchance = 0
 	},
 	{
 		-- hatchet

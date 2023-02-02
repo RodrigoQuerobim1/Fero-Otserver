@@ -32,7 +32,8 @@ GameStore.OfferTypes = {
 	OFFER_TYPE_HIRELING_SEXCHANGE = 22,
 	OFFER_TYPE_HIRELING_SKILL = 23,
 	OFFER_TYPE_HIRELING_OUTFIT = 24,
-	OFFER_TYPE_HUNTINGSLOT = 25
+	OFFER_TYPE_HUNTINGSLOT = 25,
+	OFFER_TYPE_VIP = 26
 }
 
 GameStore.SubActions = {
@@ -417,6 +418,7 @@ function parseBuyStoreOffer(playerId, msg)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_HIRELING_SEXCHANGE   then GameStore.processHirelingChangeSexPurchase(player, offer)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_HIRELING_SKILL       then GameStore.processHirelingSkillPurchase(player, offer)
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_HIRELING_OUTFIT      then GameStore.processHirelingOutfitPurchase(player, offer)
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_VIP then GameStore.processVipPurchase(player, offer.validUntil)
 		else
 			-- This should never happen by our convention, but just in case the guarding condition is messed up...
 			error({code = 0, message = "This offer is unavailable [2]"})
@@ -1488,7 +1490,10 @@ function GameStore.processSexChangePurchase(player)
 	player:toggleSex()
 end
 
-
+function GameStore.processVipPurchase(player, days)
+	player:sendTextMessage(MESSAGE_INFO_DESCR, string.format('Seu vip esta ativo.', (days == 0xFFFF and 'infinite amount of' or days), (days == 1 and '' or 's')))
+	player:addVipDays(days)
+end
 function GameStore.processExpBoostPuchase(player)
 	local currentExpBoostTime = player:getExpBoostStamina()
 	local expBoostCount = player:getStorageValue(GameStore.Storages.expBoostCount)

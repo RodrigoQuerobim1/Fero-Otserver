@@ -21,6 +21,14 @@ function Monster:onDropLoot(corpse)
 		end
 
 		for i = 1, #monsterLoot do
+			local vipPercentLoot = 0
+			if player and player:isVip() then
+				local percent = 10 -- 10% mais loot
+				if percent then
+					vipPercentLoot = (percent / 100)
+				end
+			end
+			monsterLoot[i].chance = monsterLoot[i].chance + (monsterLoot[i].chance * vipPercentLoot)
 			local item = corpse:createLootItem(monsterLoot[i], charmBonus)
 			if self:getName():lower() == Game.getBoostedCreature():lower() then
 				local itemBoosted = corpse:createLootItem(monsterLoot[i], charmBonus)

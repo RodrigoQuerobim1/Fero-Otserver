@@ -27201,7 +27201,9 @@
 	</item>
 	<item fromid="18011" toid="18012" article="a" name="stone wall"/>
 	<!-- gate -->
-	<item id="18013" article="a" name="stone floor"/>
+	<item id="18013" article="a" name="stone floor">
+		<attribute key="walkstack" value="0"/>
+	</item>
 	<item id="18014" name="RESERVED SPRITE"/>
 	<item id="18015" article="a" name="cabinet">
 		<attribute key="containersize" value="8"/>
@@ -35845,9 +35847,10 @@
 		<attribute key="wrapableto" value="23398"/>
 		<attribute key="weight" value="850"/>
 	</item>
-	<item id="23721" article="a" name="gold pouch">
-		<attribute key="description" value="A infinity bag where you can hold coins."/>
-		<attribute key="containersize" value="8"/>
+	<item id="23721" article="a" name="loot pouch">
+		<attribute key="description" value="A infinity bag where you can hold loot."/>
+		<attribute key="containersize" value="40"/>
+		<attribute key="moveable" value="0"/>
 	</item>
 	<item id="23722" article="a" name="gold converter">
 		<attribute key="showCharges" value="1"/>
@@ -47454,6 +47457,14 @@
 	<item id="32974" article="a" name="carved table">
 		<attribute key="wrapableto" value="23398"/>
 	</item>
+	<item id="32979" name="fog portal">
+		<attribute key="type" value="teleport"/>
+		<attribute key="effect" value="teleport"/>
+	</item>
+	<item fromid="33004" toid="33007" name="fog portal">
+		<attribute key="type" value="teleport"/>
+		<attribute key="effect" value="teleport"/>
+	</item>
 	<item fromid="33026" toid="33027" name="heart lamp">
 		<attribute key="wrapableto" value="23398"/>
 	</item>
@@ -48012,16 +48023,16 @@
 		<attribute key="containersize" value="48"/>
 	</item>
 	<item id="33864" article="a" name="dead goshnar's spite">
-		<attribute key="duration" value="600"/>
+		<attribute key="duration" value="10"/>
 		<attribute key="decayTo" value="0"/>
 	</item>
 	<item id="33865" article="a" name="dead goshnar's spite">
-		<attribute key="duration" value="600"/>
+		<attribute key="duration" value="300"/>
 		<attribute key="decayTo" value="33864"/>
 		<attribute key="containersize" value="48"/>
 	</item>
 	<item id="33866" article="a" name="dead goshnar's spite">
-		<attribute key="duration" value="600"/>
+		<attribute key="duration" value="300"/>
 		<attribute key="decayTo" value="33865"/>
 		<attribute key="containersize" value="48"/>
 	</item>

@@ -13,3 +13,6 @@ dofile(DATA_DIRECTORY.. '/lib/others/load.lua')
 
 -- Quests library
 dofile(DATA_DIRECTORY.. '/lib/quests/quest.lua')
+
+-- Vip System
+dofile('data-otservbr-global/lib/vip_system.lua')

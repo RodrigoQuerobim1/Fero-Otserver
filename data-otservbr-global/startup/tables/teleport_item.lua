@@ -76,5 +76,19 @@ TeleportItemUnique = {
 		itemPos = {x = 33619, y = 32518, z = 15},
 		destination = {x = 33640, y = 32561, z = 13},
 		effect = CONST_ME_TELEPORT
+	},
+	-- Barren Drift
+	[15005] = {
+		itemId = 32571,
+		itemPos = {x = 33221, y = 31703, z = 7},
+		destination = {x = 33876, y = 31884, z = 8},
+		effect = CONST_ME_TELEPORT
+	},
+	-- Barren Drift Exit
+	[15006] = {
+		itemId = 28907,
+		itemPos = {x = 33876, y = 31883, z = 8},
+		destination = {x = 33220, y = 31704, z = 7},
+		effect = CONST_ME_TELEPORT
 	}
 }

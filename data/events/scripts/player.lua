@@ -353,12 +353,12 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 			self:sendCancelMessage(RETURNVALUE_CONTAINERNOTENOUGHROOM)
 			return false
 		end
-		-- Gold Pouch
+		--Gold Pouch
 		if (containerTo:getId() == ITEM_GOLD_POUCH) then
 			if (not (item:getId() == ITEM_CRYSTAL_COIN or item:getId() == ITEM_PLATINUM_COIN
 			or item:getId() == ITEM_GOLD_COIN)) then
-				self:sendCancelMessage("You can move only money to this container.")
-				return false
+				--self:sendCancelMessage("You can move only money to this container.")
+				return true
 			end
 		end
 	end
@@ -679,6 +679,9 @@ end
 
 function Player:onGainExperience(target, exp, rawExp)
 	if not target or target:isPlayer() then
+		if self:isVip() then
+			exp = exp * 1.1 -- 10% exp
+		end
 		return exp
 	end
 

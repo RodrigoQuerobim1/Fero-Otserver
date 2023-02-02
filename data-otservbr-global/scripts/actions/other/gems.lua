@@ -103,7 +103,7 @@ function gems.onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local ThreatenedDreams = Storage.Quest.U11_40.ThreatenedDreams
 	for index, value in pairs(shrine) do
 		if target.actionid == value.targetAction then
-			if player:getStorageValue(ThreatenedDreams.Mission01[1]) == -1 then
+			if player:getStorageValue(ThreatenedDreams.Mission01[1]) == 16 then
 				if item.itemid == index then
 					player:teleportTo(value.destination)
 					player:getPosition():sendMagicEffect(value.effect)
